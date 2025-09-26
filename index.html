@@ -68,15 +68,20 @@
             <div class="logo">
                 <h1>BIG WILL'S KITCHEN</h1>
             </div>
-            <nav class="nav">
-                <a href="#home" class="nav-link">BODEGA</a>
-                <a href="#menu" class="nav-link">MENU</a>
-                <a href="#about" class="nav-link">ABOUT</a>
-                <a href="#locations" class="nav-link">LOCATIONS</a>
-                <a href="#contact" class="nav-link">CONTACT</a>
-                <a href="https://www.doordash.com/store/big-will%E2%80%99s-kitchen-lockport-23186456/12819630/" class="nav-cta" target="_blank">ORDER FOOD</a>
-            </nav>
+            <button class="hamburger" id="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="#home" class="mobile-nav-link">BODEGA</a>
+            <a href="#menu" class="mobile-nav-link">MENU</a>
+            <a href="#about" class="mobile-nav-link">ABOUT</a>
+            <a href="#locations" class="mobile-nav-link">LOCATIONS</a>
+            <a href="#contact" class="mobile-nav-link">CONTACT</a>
+            <a href="https://www.doordash.com/store/big-will%E2%80%99s-kitchen-lockport-23186456/12819630/" class="mobile-nav-cta" target="_blank">ORDER FOOD</a>
+        </nav>
     </header>
 
     <!-- Main Content -->
@@ -84,25 +89,24 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-image">
-                <img src="images/food-truck.jpg" alt="Big Will's Kitchen Food Truck" class="hero-img">
+                <img src="images/hero-cheesesteak.jpg" alt="Big Will's Kitchen Philly Cheesesteak" class="hero-img">
                 <div class="hero-overlay">
                     <div class="hero-content">
                         <h1 class="hero-title">NOW OPEN!</h1>
                         <h2 class="hero-subtitle">@ 39 LOCUST ST, LOCKPORT NY</h2>
-                        <a href="#locations" class="hero-cta">CHECK IT OUT!</a>
+                        <a href="https://www.doordash.com/store/big-will%E2%80%99s-kitchen-lockport-23186456/12819630/" class="hero-cta" target="_blank">ORDER NOW</a>
                     </div>
                 </div>
+            </div>
+            <div class="hero-text">
+                <p>WITH OUR BODEGA AND FOOD TRUCK SERVING THE LOCKPORT AREA, BIG WILL'S SERVES UP NYC-STYLE COMFORT FOOD WITH A SPECIAL EMPHASIS ON OUR PHILLY CHEESESTEAKS; TRY OUT THE HUNGRY MAN CHEESESTEAK, IF YOU DARE!</p>
+                <p>EACH LOCATION IS A LITTLE DIFFERENT, BUT ALL LOCALLY OWNED & OPERATED BY US.</p>
+                <p class="hero-cta-text">CHECK THEM OUT!</p>
             </div>
         </section>
 
         <!-- Locations Section -->
         <section id="locations" class="locations">
-            <div class="locations-intro">
-                <h2>WITH OUR BODEGA AND FOOD TRUCK SERVING THE LOCKPORT AREA, BIG WILL'S SERVES UP NYC-STYLE COMFORT FOOD WITH A SPECIAL EMPHASIS ON OUR PHILLY CHEESESTEAKS; TRY OUT THE HUNGRY MAN CHEESESTEAK, IF YOU DARE!</h2>
-                <p>EACH LOCATION IS A LITTLE DIFFERENT, BUT ALL LOCALLY OWNED & OPERATED BY US.</p>
-                <p>CHECK THEM OUT!</p>
-            </div>
-
             <div class="locations-grid">
                 <!-- Main Bodega Location -->
                 <div class="location-card">
@@ -112,13 +116,14 @@
                     <div class="location-content">
                         <h3>BIG WILL'S KITCHEN BODEGA</h3>
                         <p class="location-address">39 LOCUST ST<br>LOCKPORT, NY 14094</p>
+                        <p class="location-phone">(716) 727-0011</p>
                         <div class="location-hours">
                             <h4>HOURS</h4>
                             <p>MON-FRI 7AM–11PM<br>
                             SAT 8AM–11PM<br>
                             SUN 8AM–10PM</p>
                         </div>
-                        <a href="#contact" class="location-link">LEARN MORE</a>
+                        <a href="#contact" class="location-link">VIEW MENU</a>
                     </div>
                 </div>
 
@@ -129,41 +134,60 @@
                     </div>
                     <div class="location-content">
                         <h3>BIG WILL'S KITCHEN FOOD TRUCK</h3>
-                        <p class="location-address">SERVING LOCKPORT & SURROUNDING AREAS WEEKLY.</p>
-                        <div class="location-hours">
-                            <h4>SCHEDULE</h4>
-                            <p>CHECK OUR SOCIAL MEDIA FOR CURRENT LOCATIONS AND TIMES</p>
-                        </div>
-                        <a href="#contact" class="location-link">SEE SCHEDULE</a>
+                        <p class="location-address">SERVING LOCKPORT & SURROUNDING AREAS</p>
+                        <a href="#contact" class="location-link">FIND OUR LOCATION</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Food Truck Section -->
-        <section class="food-truck">
-            <div class="food-truck-hero">
-                <img src="images/food-truck-hero.jpg" alt="Big Will's Kitchen Food Truck" class="food-truck-img">
-                <div class="food-truck-overlay">
-                    <div class="food-truck-content">
-                        <h2 class="food-truck-title">FIND OUT WHEN AND WHERE THE FOOD TRUCK WILL BE!</h2>
-                        <a href="#contact" class="food-truck-cta">VIEW SCHEDULE</a>
+        <!-- Merchandise Section -->
+        <section class="merch">
+            <div class="merch-content">
+                <h2>SHOP OUR MERCH STORE</h2>
+                <div class="merch-grid">
+                    <div class="merch-item">
+                        <div class="merch-image">
+                            <img src="images/merch-shirt-orange.jpg" alt="Big Will's Kitchen Orange T-Shirt" class="merch-img">
+                        </div>
+                        <div class="merch-info">
+                            <h3>BIG WILL'S CLASSIC LOGO T-SHIRT</h3>
+                            <p>ORANGE</p>
+                        </div>
+                    </div>
+                    <div class="merch-item">
+                        <div class="merch-image">
+                            <img src="images/merch-sweatshirt.jpg" alt="Big Will's Kitchen Sweatshirt" class="merch-img">
+                        </div>
+                        <div class="merch-info">
+                            <h3>BIG WILL'S CLASSIC LOGO SWEATSHIRT</h3>
+                            <p>LIGHT BEIGE</p>
+                        </div>
+                    </div>
+                    <div class="merch-item">
+                        <div class="merch-image">
+                            <img src="images/merch-shirt-yellow.jpg" alt="Big Will's Kitchen Yellow T-Shirt" class="merch-img">
+                        </div>
+                        <div class="merch-info">
+                            <h3>BIG WILL'S CLASSIC LOGO T-SHIRT</h3>
+                            <p>YELLOW</p>
+                        </div>
                     </div>
                 </div>
+                <a href="#merch" class="merch-cta">SHOP NOW</a>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="about">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="images/restaurant-interior.jpg" alt="Big Will's Kitchen Interior" class="about-img">
-                </div>
-                <div class="about-text">
-                    <h2>THE BIG WILL'S WAY</h2>
-                    <p>WE PRIDE OURSELVES ON OUR ATTENTION TO DETAIL AND OUR APPRECIATION FOR THE SMALL, SIMPLE PLEASURES IN LIFE.</p>
-                    <p>OUR GOAL, EACH AND EVERY DAY, IS TO CREATE A FAMILY LIKE ENVIRONMENT FOR OUR ENTIRE TEAM AS WELL AS OUR RESTAURANT PATRONS. COME ON IN AND JOIN THE FAMILY!</p>
-                    <a href="#about" class="about-link">ABOUT BIG WILL'S</a>
+            <div class="about-hero">
+                <img src="images/about-background.jpg" alt="Big Will's Kitchen Background" class="about-bg">
+                <div class="about-overlay">
+                    <div class="about-content">
+                        <h2>THE BIG WILL'S WAY</h2>
+                        <p>WE PRIDE OURSELVES ON OUR ATTENTION TO DETAIL AND OUR APPRECIATION FOR THE SMALL, SIMPLE PLEASURES IN LIFE.</p>
+                        <a href="#about" class="about-link">LEARN MORE</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -172,7 +196,7 @@
         <section class="newsletter">
             <div class="newsletter-content">
                 <h2>JOIN THE BIG WILL'S FAMILY</h2>
-                <p>SIGN UP FOR THE BIG WILL'S FAMILY FOR EXCLUSIVE DEALS AND EVENTS!</p>
+                <p>SIGN UP FOR OUR EMAIL LIST TO RECEIVE EXCLUSIVE OFFERS, NEWS, AND UPDATES!</p>
                 <form class="newsletter-form">
                     <div class="form-group">
                         <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
@@ -185,38 +209,52 @@
                     </div>
                     <button type="submit" class="newsletter-btn">SIGN UP</button>
                 </form>
-                <p class="newsletter-privacy">WE VALUE YOUR PRIVACY AND WILL NEVER SELL YOUR INFO TO 3RD PARTIES OR DO OTHERWISE NEFARIOUS THINGS.</p>
-                <p class="newsletter-thanks">THANK YOU!</p>
             </div>
         </section>
 
         <!-- Catering Section -->
         <section class="catering">
-            <div class="catering-content">
-                <h2>WE CATER!</h2>
-                <a href="#contact" class="catering-link">LEARN MORE</a>
+            <div class="catering-hero">
+                <img src="images/catering-background.jpg" alt="Big Will's Kitchen Catering" class="catering-bg">
+                <div class="catering-overlay">
+                    <div class="catering-content">
+                        <h2>WE CATER!</h2>
+                        <a href="#contact" class="catering-link">REQUEST A QUOTE</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Social Section -->
+        <!-- Social Media Section -->
         <section class="social">
             <div class="social-content">
                 <h2>FOLLOW US!</h2>
-                <p>SIGN UP TO GET UPDATES ABOUT BIG WILL'S!</p>
-                <form class="social-form">
-                    <div class="form-group">
-                        <input type="text" id="socialFirstName" name="firstName" placeholder="First Name" required>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/p/Big-Wills-Kitchen-100064654855119/" target="_blank" class="social-icon">📘</a>
+                    <a href="https://www.instagram.com/bigwillskitchen716/" target="_blank" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">🎵</a>
+                    <a href="#" class="social-icon">📺</a>
+                </div>
+                <div class="social-gallery">
+                    <div class="social-post">
+                        <img src="images/social-1.jpg" alt="Big Will's Kitchen Social Post" class="social-img">
                     </div>
-                    <div class="form-group">
-                        <input type="text" id="socialLastName" name="lastName" placeholder="Last Name" required>
+                    <div class="social-post">
+                        <img src="images/social-2.jpg" alt="Big Will's Kitchen Social Post" class="social-img">
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="socialEmail" name="email" placeholder="Email Address" required>
+                    <div class="social-post">
+                        <img src="images/social-3.jpg" alt="Big Will's Kitchen Social Post" class="social-img">
                     </div>
-                    <button type="submit" class="social-btn">SIGN UP</button>
-                </form>
-                <p class="social-privacy">WE HATE SPAM AS MUCH AS YOU DO. WE SEND ROUGHLY 1 EMAIL PER MONTH, SOMETIMES LESS.</p>
-                <p class="social-thanks">THANK YOU!</p>
+                    <div class="social-post">
+                        <img src="images/social-4.jpg" alt="Big Will's Kitchen Social Post" class="social-img">
+                    </div>
+                    <div class="social-post">
+                        <img src="images/social-5.jpg" alt="Big Will's Kitchen Social Post" class="social-img">
+                    </div>
+                    <div class="social-post">
+                        <img src="images/social-6.jpg" alt="Big Will's Kitchen Social Post" class="social-img">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -224,45 +262,31 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-                <h3>BIG WILL'S KITCHEN</h3>
-                <p>INFO@BIGWILLSKITCHEN.COM<br>(716) 727-0011</p>
+            <h3>BIG WILL'S KITCHEN</h3>
+            <div class="footer-links">
+                <a href="#contact">CONTACT US</a>
+                <a href="#privacy">PRIVACY POLICY</a>
+                <a href="#terms">TERMS & CONDITIONS</a>
             </div>
-            
-            <div class="footer-section">
-                <h4>BODEGA HOURS</h4>
-                <p>MON-FRI 7AM–11PM<br>
-                SAT 8AM–11PM<br>
-                SUN 8AM–10PM</p>
+            <div class="footer-locations">
+                <h4>LOCATIONS</h4>
+                <p>BIG WILL'S KITCHEN BODEGA</p>
+                <p>BIG WILL'S KITCHEN FOOD TRUCK</p>
             </div>
-            
-            <div class="footer-section">
-                <h4>FOOD TRUCK HOURS</h4>
-                <p>CHECK SOCIAL MEDIA FOR SCHEDULE</p>
+            <div class="footer-hours">
+                <h4>HOURS</h4>
+                <p>MONDAY - SATURDAY 7AM - 11PM</p>
+                <p>SUNDAY 8AM - 10PM</p>
             </div>
-            
-            <div class="footer-section">
-                <h4>BIG WILL'S KITCHEN BODEGA</h4>
-                <p>39 LOCUST ST<br>LOCKPORT, NY 14094</p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BIG WILL'S KITCHEN. ALL RIGHTS RESERVED.</p>
+                <div class="payment-icons">
+                    <span>💳</span>
+                    <span>💳</span>
+                    <span>💳</span>
+                    <span>💳</span>
+                </div>
             </div>
-            
-            <div class="footer-section">
-                <h4>BIG WILL'S KITCHEN FOOD TRUCK</h4>
-                <p>SERVING LOCKPORT & SURROUNDING AREAS</p>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <nav class="footer-nav">
-                <a href="#home">HOME</a>
-                <a href="#menu">MENU</a>
-                <a href="#about">OUR STORY</a>
-                <a href="#locations">LOCATIONS</a>
-                <a href="#contact">CONTACT</a>
-                <a href="#catering">CATERING</a>
-                <a href="#jobs">JOBS</a>
-            </nav>
-            <p>&copy;2024 BIG WILL'S KITCHEN | PRIVACY POLICY</p>
         </div>
     </footer>
 
