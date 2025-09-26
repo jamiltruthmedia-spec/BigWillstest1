@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Debug - Big Will's Kitchen</title>
+    <style>
+        /* Inline CSS test */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        .test-box {
+            background: #d4af37;
+            color: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        .error {
+            background: #ff4444;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .success {
+            background: #44ff44;
+            color: black;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1>CSS Debug Page</h1>
+    
+    <div class="test-box">
+        <h2>Test 1: Inline CSS</h2>
+        <p>If you see this styled box, basic CSS is working.</p>
+    </div>
+    
+    <div class="error">
+        <h2>Test 2: External CSS</h2>
+        <p>If the button below is styled (gold background, rounded corners), external CSS is working:</p>
+        <button class="btn btn-primary">Test Button</button>
+    </div>
+    
+    <div class="success">
+        <h2>Diagnosis</h2>
+        <p><strong>If the button above is NOT styled:</strong> External CSS file is not loading</p>
+        <p><strong>If the button above IS styled:</strong> CSS is working, issue is with images</p>
+    </div>
+    
+    <h2>Common Issues:</h2>
+    <ul>
+        <li><strong>CSS not loading:</strong> Check file path: <code>assets/css/style.css</code></li>
+        <li><strong>Images missing:</strong> Add images to <code>assets/images/</code> folder</li>
+        <li><strong>Browser cache:</strong> Hard refresh (Ctrl+F5 or Cmd+Shift+R)</li>
+        <li><strong>File permissions:</strong> Make sure CSS file is readable</li>
+    </ul>
+    
+    <h2>File Structure Check:</h2>
+    <p>Current path: <code>website/assets/css/style.css</code></p>
+    <p>HTML file: <code>website/index.html</code></p>
+    <p>CSS link in HTML: <code>&lt;link rel="stylesheet" href="assets/css/style.css"&gt;</code></p>
+    
+    <div class="test-box">
+        <h2>Quick Fix</h2>
+        <p>1. Open browser developer tools (F12)</p>
+        <p>2. Check Console tab for errors</p>
+        <p>3. Check Network tab to see if style.css loads</p>
+        <p>4. If CSS loads but looks unstyled, check for missing images</p>
+    </div>
+</body>
+</html>
