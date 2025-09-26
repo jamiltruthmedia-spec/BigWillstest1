@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Test - Big Will's Kitchen</title>
+    <style>
+        /* Critical CSS - ensures basic styling works */
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
+        .header { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; top: 0; width: 100%; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; height: 70px; }
+        .nav-logo h1 { font-size: 1.8rem; font-weight: 700; color: #d4af37; margin: 0; }
+        .nav-tagline { font-size: 0.9rem; color: #666; font-weight: 500; }
+        .nav-menu { display: flex; align-items: center; gap: 2rem; }
+        .nav-link { text-decoration: none; color: #333; font-weight: 500; }
+        .nav-cta { background: #d4af37; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: 600; }
+        .hero { position: relative; height: 100vh; overflow: hidden; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); }
+        .hero-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); display: flex; align-items: center; justify-content: center; }
+        .hero-content { text-align: center; color: white; max-width: 600px; padding: 0 20px; }
+        .hero-title { font-size: 4rem; font-weight: 700; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero-subtitle { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.5rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); }
+        .locations { padding: 80px 0; background: white; }
+        .locations-intro { text-align: center; max-width: 800px; margin: 0 auto 4rem; }
+        .locations-intro h2 { font-size: 1.8rem; font-weight: 600; color: #333; margin-bottom: 1.5rem; line-height: 1.4; }
+        .locations-intro p { font-size: 1.1rem; color: #666; margin-bottom: 1rem; }
+        .locations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem; max-width: 1000px; margin: 0 auto; }
+        .location-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+        .location-image { height: 250px; overflow: hidden; background: #f8f9fa; display: flex; align-items: center; justify-content: center; color: #666; font-size: 1.1rem; }
+        .location-content { padding: 2rem; }
+        .location-content h3 { font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; color: #333; }
+        .location-address { font-size: 1.1rem; color: #666; margin-bottom: 1.5rem; line-height: 1.5; }
+        .location-link { display: inline-block; background: #d4af37; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 600; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .btn { padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; display: inline-block; text-align: center; }
+        .btn-primary { background: #d4af37; color: white; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="/" class="logo-link">
+                        <h1>Big Will's Kitchen</h1>
+                        <span class="nav-tagline">NYC Bodega</span>
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#menu" class="nav-link">Menu</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#locations" class="nav-link">Locations</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#" class="nav-cta">Order Food</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">Now Open!</h1>
+                <h2 class="hero-subtitle">@ 39 Locust St, Lockport NY</h2>
+                <p>Check it out!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="locations">
+        <div class="container">
+            <div class="locations-intro">
+                <h2>With our bodega and food truck serving the Lockport area, Big Will's serves up NYC-style comfort food with a special emphasis on our Philly cheesesteaks; try out the Hungry Man cheesesteak, if you dare!</h2>
+                <p>Each location is a little different, but all locally owned & operated by us.</p>
+                <p>Check them out!</p>
+            </div>
+
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-image">
+                        <div>Big Will's Kitchen Bodega Image</div>
+                    </div>
+                    <div class="location-content">
+                        <h3>Big Will's Kitchen Bodega</h3>
+                        <p class="location-address">39 Locust St<br>Lockport, NY 14094</p>
+                        <a href="#" class="location-link">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-image">
+                        <div>Big Will's Kitchen Food Truck Image</div>
+                    </div>
+                    <div class="location-content">
+                        <h3>Big Will's Kitchen Food Truck</h3>
+                        <p class="location-address">Serving Lockport & surrounding areas weekly.</p>
+                        <a href="#" class="location-link">See Schedule</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" style="padding: 50px 20px; text-align: center;">
+        <h2 style="color: #d4af37; margin-bottom: 20px;">✅ Styling Test Successful!</h2>
+        <p>If you can see this styled page with:</p>
+        <ul style="text-align: left; max-width: 500px; margin: 0 auto;">
+            <li>Gold header with "Big Will's Kitchen"</li>
+            <li>Styled navigation menu</li>
+            <li>Hero section with overlay</li>
+            <li>Location cards with shadows</li>
+            <li>Proper fonts and colors</li>
+        </ul>
+        <p style="margin-top: 20px;"><strong>Then the CSS is working! The main website should look the same.</strong></p>
+        <a href="index.html" class="btn btn-primary" style="margin-top: 20px;">View Main Website</a>
+    </div>
+</body>
+</html>
